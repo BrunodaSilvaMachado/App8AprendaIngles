@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".fragment.NumerosFragment"
+                                                   android:id="@+id/numeroLayout"
+                                                   android:background="@drawable/segundo_fundo">
+    <ImageView
+            android:src="@drawable/um"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/button1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button3" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/button2" android:background="@android:color/transparent"/>
+    <ImageView
+            android:src="@drawable/dois"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/button2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button4" app:layout_constraintStart_toEndOf="@+id/button1"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/transparent"/>
+    <ImageView
+            android:src="@drawable/tres"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/button1"
+            app:layout_constraintBottom_toTopOf="@+id/button5" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/button4" android:background="@android:color/transparent"/>
+    <ImageView
+            android:src="@drawable/quatro"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintBottom_toTopOf="@+id/button6" app:layout_constraintStart_toEndOf="@+id/button3"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent" android:background="@android:color/transparent"/>
+    <ImageView
+            android:src="@drawable/cinco"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/button5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/button6" android:background="@android:color/transparent"/>
+    <ImageView
+            android:src="@drawable/seis"
+            android:layout_width="100dp"
+            android:layout_height="100dp" android:id="@+id/button6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4" app:layout_constraintStart_toEndOf="@+id/button5"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent" android:background="@android:color/transparent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
